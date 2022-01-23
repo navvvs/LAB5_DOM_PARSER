@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="ChristUniversity">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="User" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="U_email" type="xs:string"></xs:element>
+<xs:element name="U_name" type="xs:string"></xs:element>
+<xs:element name="U_id" type="xs:integer"></xs:element>
+<xs:element name="U_gender" type="xs:string"></xs:element>
+<xs:element name="U_type" type="xs:string"></xs:element>
+<xs:element name="U_contact" type="xs:integer"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Ticket" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="T_id" type="xs:integer"></xs:element>
+<xs:element name="T_date" type="xs:string"></xs:element>
+<xs:element name="T_price" type="xs:integer"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+
+<xs:element name="Event" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Event_id" type="xs:integer"></xs:element>
+<xs:element name="Event_name" type="xs:string"></xs:element>
+<xs:element name="Event_type" type="xs:string"></xs:element>
+<xs:element name="Event_time" type="xs:date"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Staff" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Event_manager_id" type="xs:integer"></xs:element>
+<xs:element name="Event_manager_name" type="xs:string"></xs:element>
+<xs:element name="admin_id" type="xs:integer"></xs:element>
+<xs:element name="admin_name" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Venue" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="V_id" type="xs:integer"></xs:element>
+<xs:element name="V_name" type="xs:string"></xs:element>
+<xs:element name="V_status" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Asset" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Asset_id" type="xs:integer"></xs:element>
+<xs:element name="Asset_type" type="xs:string"></xs:element>
+<xs:element name="Invoice_id" type="xs:integer"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
